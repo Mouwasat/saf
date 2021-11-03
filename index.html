@@ -219,9 +219,11 @@
 	}
 </style>
 	<script type="text/javascript">
-	if (screen.width <= 699px) {
-window.location = "https://saferyalla.com/mobile";
-</script>
+    $(window).on('load resize',function(){
+        if($(window).width() < 700){
+            window.location = "https://saferyalla.com/mobile.html"
+        }
+    });
 	
 <script id="applicationScript">
 ///////////////////////////////////////
